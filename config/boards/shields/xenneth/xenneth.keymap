@@ -8,8 +8,7 @@
  #include <dt-bindings/zmk/keys.h>
  #include <dt-bindings/zmk/bt.h>
  #include <dt-bindings/zmk/outputs.h>
- #include <behaviors/rgbled_widget.dtsi> 
-
+ 
  #define BASE 0
  #define RED  1
  #define ORG  2
@@ -109,18 +108,18 @@
                  label= "ORG"               ;
  // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
  //              ┏━━━━━━━━━━━━┓
- //              ┃ BAT Level  ┃
+ //              ┃  VOLUME +  ┃
  //              ┣━━━━━━━━━━━━┫
  //              ┃            ┃
  //              ┣━━━━━━━━━━━━┫
- //              ┃ BT Profile ┃
+ //              ┃  VOLUME -  ┃
  //              ┗━━━━━━━━━━━━┛
  //
   bindings = <
  //
-     &ind_bat
+     &kp C_VOL_UP
      &trans
-     &ind_con
+     &kp C_VOL_DN
          >;
      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                  };
