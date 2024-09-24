@@ -7,5 +7,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1, 2]
-  k: Reset
+- p: [2, 4]
+  k: BT 1
