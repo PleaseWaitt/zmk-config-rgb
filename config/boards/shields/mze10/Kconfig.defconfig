@@ -1,5 +1,9 @@
 if SHIELD_MZE10
 
     config ZMK_KEYBOARD_NAME
+<<<<<<< HEAD
         default "mze10"
+=======
+        default "MZE10"
+>>>>>>> 42bd03fd6d400e884a11c68dfbfcfa7799096361
 endif

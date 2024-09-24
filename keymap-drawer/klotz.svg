@@ -82,6 +82,10 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
     font-size: 8px;
@@ -113,7 +117,7 @@ path.combo {
 /* End Tabler Icons Cleanup */
 </style>
 <g transform="translate(30, 0)" class="layer-base">
-<text x="0" y="28" class="label">base:</text>
+<text x="0" y="28" class="label" id="base">base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -246,13 +250,15 @@ path.combo {
 <g transform="translate(283, 235) rotate(3.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">↹</text>
-<text x="0" y="24" class="key hold">nav</text>
-</g>
+<a href="#nav">
+<text x="0" y="24" class="key hold layer-activator">nav</text>
+</a></g>
 <g transform="translate(345, 241) rotate(8.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
-<text x="0" y="24" class="key hold">media</text>
-</g>
+<a href="#media">
+<text x="0" y="24" class="key hold layer-activator">media</text>
+</a></g>
 <g transform="translate(513, 241) rotate(-8.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⏎</text>
@@ -260,12 +266,13 @@ path.combo {
 <g transform="translate(576, 235) rotate(-3.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
-<text x="0" y="24" class="key hold">sym</text>
-</g>
+<a href="#sym">
+<text x="0" y="24" class="key hold layer-activator">sym</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 329)" class="layer-nav">
-<text x="0" y="28" class="label">nav:</text>
+<text x="0" y="28" class="label" id="nav">nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -444,12 +451,13 @@ path.combo {
 </g>
 <g transform="translate(576, 235) rotate(-3.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">adjust</text>
-</g>
+<a href="#adjust">
+<text x="0" y="0" class="key tap layer-activator">adjust</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 658)" class="layer-sym">
-<text x="0" y="28" class="label">sym:</text>
+<text x="0" y="28" class="label" id="sym">sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -577,8 +585,9 @@ path.combo {
 </g>
 <g transform="translate(283, 235) rotate(3.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">adjust</text>
-</g>
+<a href="#adjust">
+<text x="0" y="0" class="key tap layer-activator">adjust</text>
+</a></g>
 <g transform="translate(345, 241) rotate(8.0)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -593,7 +602,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 987)" class="layer-adjust">
-<text x="0" y="28" class="label">adjust:</text>
+<text x="0" y="28" class="label" id="adjust">adjust:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
@@ -732,7 +741,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 1317)" class="layer-media">
-<text x="0" y="28" class="label">media:</text>
+<text x="0" y="28" class="label" id="media">media:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -872,7 +881,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 1646)" class="layer-extra">
-<text x="0" y="28" class="label">extra:</text>
+<text x="0" y="28" class="label" id="extra">extra:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 109) rotate(-10.0)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
