@@ -9,3 +9,5 @@ layers:
 combos:
 - p: [2, 4]
   k: BT 1
+- p: [2, 0]
+  k: BT NXT
