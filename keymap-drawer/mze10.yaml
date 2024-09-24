@@ -1,5 +1,5 @@
 layers:
-  base: [Vol Up, ⏮️, '&td1', ⏭️, Vol Down]
+  base: ['&td0', '&td0', ⏮️, '&td1', ⏭️, Vol Down]
   bt:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
