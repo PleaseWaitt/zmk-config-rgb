@@ -14,7 +14,9 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: xenneth rgbled_widget
+   shield: xenneth rgbled_widget
+  - board: seeeduino_xiao_ble
+   shield: mze10 rgbled_widget
 #  - board: seeeduino_xiao_ble
 #    shield: xenneth
 #  - board: nice_nano_v2
