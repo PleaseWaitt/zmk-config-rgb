@@ -1,0 +1,20 @@
+layers:
+  base:
+  - {t: ⏭️, h: red}
+  - '&td2'
+  - {t: ⏮️, h: green}
+  red:
+  - {type: held}
+  - '&td0'
+  - BT 1
+  orange:
+  - '&ind_bat'
+  - {t: ▽, type: trans}
+  - '&ind_con'
+  green:
+  - BT CLR
+  - '&td1'
+  - {type: held}
+combos:
+- p: [0, 1, 2]
+  k: Reset
