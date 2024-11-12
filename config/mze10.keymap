@@ -56,7 +56,7 @@
           label = "TAP_DANCE_4";
           #binding-cells = <0>;
           tapping-term-ms = <250>;
-          bindings = <&kp C_NEXT>, <&kp C_FF>;
+          bindings = <&kp C_NEXT>, <&kp C_FF>, <&studio_unlock>;
         };
     };
      keymap {
