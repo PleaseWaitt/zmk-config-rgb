@@ -12,6 +12,7 @@
 		zmk,kscan = &kscan0;
 		zmk,matrix_transform = &default_transform;
 		zmk,kscan = &side_band_behavior_triggers;
+		zmk,physical-layout = &physical_layout0;
 	};
 
 
