@@ -83,4 +83,8 @@
             hold-time-ms = <2000>;
         };
     };
+	physical_layout0 {
+		kscan = <&kscan0>;
+		transform = <&matrix_transform0>;
+	};
 };
