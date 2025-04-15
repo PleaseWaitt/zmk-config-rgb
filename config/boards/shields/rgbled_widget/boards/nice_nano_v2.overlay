@@ -4,8 +4,17 @@
         led-green = &green_led;
         led-blue = &blue_led;
     };
-
     leds {
+        compatible = "gpio-leds";
         status = "okay";
+        led0: led_0 {
+            gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>;  // red LED, connected to P0.20
+        };
+        led1: led_1 {
+            gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // green LED, connected to P0.22
+        };
+        led2: led_2 {
+            gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;  // blue LED, connected to P0.24
+        };
     };
 };
