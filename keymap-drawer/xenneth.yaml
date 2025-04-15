@@ -1,17 +1,18 @@
+layout: {zmk_keyboard: xenneth}
 layers:
-  base:
-  - {t: ⏭️, h: red}
+  BASE:
+  - {t: ⏭️, h: RED}
   - '&td2'
-  - {t: ⏮️, h: green}
-  red:
+  - {t: ⏮️, h: GRN}
+  RED:
   - {type: held}
   - '&td0'
   - BT 1
-  orange:
+  ORG:
   - '&ind_bat'
   - {t: ▽, type: trans}
   - '&ind_con'
-  green:
+  GRN:
   - BT CLR
   - '&td1'
   - {type: held}

@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: mze10}
 layers:
-  base: ['&td0', '&td1', '&td2', '&td3', '&td4']
-  bt:
+  BASE: ['&td0', '&td1', '&td2', '&td3', '&td4']
+  BT:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
