@@ -5,8 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-/* #include <nice_nano_v2-pinctrl.dtsi>
-*/
+
 / {
 	chosen {
 		zmk,kscan = &kscan0;
@@ -31,6 +30,7 @@
 		label = "KSCAN";
 
 		diode-direction = "col2row";
+		wakeup-source;
 		row-gpios
 			= <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -44,8 +44,8 @@
 		label = "LEFT_ENCODER";
 		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
-		//status = "disabled";
+		steps = <48>;
+		status = "disabled";
 	};
 
 	right_encoder: encoder_right {
@@ -53,12 +53,33 @@
 		label = "RIGHT_ENCODER";
 		a-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
-		//status = "disabled";
+		steps = <48>;
+		status = "disabled";
 	};
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&left_encoder &right_encoder>;
+		triggers-per-rotation = <12>;
+	};
+		aliases {
+			led-red = &led0;
+			led-green = &led1;
+			led-blue = &led2;
+		};
+	
+		leds {
+			compatible = "gpio-leds";
+			status = "okay";
+			led0: led_0 {
+				gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>;  // red LED, connected to P0.20
+			};
+			led1: led_1 {
+				gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // green LED, connected to P0.22
+			};
+			led2: led_2 {
+				gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;  // blue LED, connected to P0.24
+			};
+		};
 	};
 };
