@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: klotz}
+layout: {zmk_keyboard: klotz}
 layers:
-  base:
+  BASE:
   - Q
   - W
   - E
@@ -31,11 +31,11 @@ layers:
   - ','
   - .
   - /
-  - {t: ↹, h: nav}
-  - {t: ␣, h: media}
+  - {t: ↹, h: NAV}
+  - {t: ␣, h: MED}
   - ⏎
-  - {t: ⌫, h: sym}
-  nav:
+  - {t: ⌫, h: SYM}
+  NAV:
   - BT CLR
   - BT 1
   - '&td0'
@@ -69,8 +69,8 @@ layers:
   - {type: held}
   - ⏯
   - KP 0
-  - adjust
-  sym:
+  - ADJ
+  SYM:
   - Esc
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,7 +83,7 @@ layers:
   - '&td1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+ ↑
+  - Gui+↑
   - '['
   - ']'
   - $
@@ -93,7 +93,7 @@ layers:
   - '"'
   - {t: ▽, type: trans}
   - '&td2'
-  - Gui+ ↓
+  - Gui+↓
   - '&td3'
   - {t: ▽, type: trans}
   - '!'
@@ -101,11 +101,11 @@ layers:
   - '#'
   - '#'
   - \
-  - adjust
+  - ADJ
   - {t: ▽, type: trans}
   - )
   - {type: held}
-  adjust:
+  ADJ:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,7 +140,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  media:
+  MED:
   - '&td1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -175,7 +175,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  extra:
+  EXTRA:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
